@@ -96,7 +96,7 @@ a:hover { text-decoration-thickness: 2px; }
 .tagline {
   margin: 0.6rem 0 1.1rem;
   color: var(--muted);
-  font-size: 1.1rem;
+  font-size: 1.15rem;
 }
 
 .top-links, .section-nav {
@@ -104,7 +104,7 @@ a:hover { text-decoration-thickness: 2px; }
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.4rem 1.1rem;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .section-nav {
@@ -113,7 +113,6 @@ a:hover { text-decoration-thickness: 2px; }
   border-top: 1px solid var(--rule);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-size: 0.82rem;
 }
 
 .section-nav a {
@@ -136,7 +135,7 @@ h2 {
 .lede { font-size: 1.15rem; margin: 0; }
 
 .project-group {
-  font-size: 1.05rem;
+  font-size: 1.0625rem;
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -154,20 +153,20 @@ h2 {
 
 .entry h3 {
   margin: 0;
-  font-size: 1.08rem;
+  font-size: 1.0625rem;
 }
 
 .entry p { margin: 0.5rem 0 0; }
 
 .tags {
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   margin-top: 0.2rem !important;
 }
 
 .badge {
   display: inline-block;
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 600;
   vertical-align: 0.15em;
   padding: 0.1em 0.6em;
@@ -231,7 +230,7 @@ footer {
   color: var(--muted);
 }
 
-footer .fine { font-size: 0.85rem; }
+footer .fine { font-size: 0.9rem; }
 
 /* --- Small screens --- */
 
