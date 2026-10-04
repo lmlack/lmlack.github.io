@@ -83,14 +83,19 @@ a:hover { text-decoration-thickness: 2px; }
   letter-spacing: 0.01em;
 }
 
+/* a little ZX Spectrum rainbow flash */
 .masthead h1::after {
   content: "";
   display: block;
-  width: 3.5rem;
-  height: 3px;
-  border-radius: 2px;
-  background: var(--accent);
-  margin: 0.65rem auto 0;
+  width: 4rem;
+  height: 0.45rem;
+  background: linear-gradient(90deg,
+    #d42d27 0 25%,
+    #f2c230 25% 50%,
+    #37a34a 50% 75%,
+    #28b7d0 75% 100%);
+  transform: skewX(-35deg);
+  margin: 0.7rem auto 0;
 }
 
 .tagline {
