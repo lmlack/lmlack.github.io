@@ -10,6 +10,10 @@
   --rule: #dcdcd4;
   --badge-bg: #e8efe6;
   --badge-text: #2e5c38;
+  --zx-red: rgba(212, 45, 39, 0.20);
+  --zx-yellow: rgba(242, 194, 48, 0.20);
+  --zx-green: rgba(55, 163, 74, 0.20);
+  --zx-cyan: rgba(40, 183, 208, 0.20);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,6 +27,10 @@
     --rule: #3a3d43;
     --badge-bg: #28372b;
     --badge-text: #a4cfa9;
+    --zx-red: rgba(212, 45, 39, 0.16);
+    --zx-yellow: rgba(242, 194, 48, 0.16);
+    --zx-green: rgba(55, 163, 74, 0.16);
+    --zx-cyan: rgba(40, 183, 208, 0.16);
   }
 }
 
@@ -36,6 +44,10 @@
   --rule: #3a3d43;
   --badge-bg: #28372b;
   --badge-text: #a4cfa9;
+  --zx-red: rgba(212, 45, 39, 0.16);
+  --zx-yellow: rgba(242, 194, 48, 0.16);
+  --zx-green: rgba(55, 163, 74, 0.16);
+  --zx-cyan: rgba(40, 183, 208, 0.16);
 }
 
 * { box-sizing: border-box; }
@@ -52,6 +64,22 @@ body {
   font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, "Times New Roman", serif;
   font-size: 1.0625rem;
   line-height: 1.6;
+}
+
+/* a ZX Spectrum rainbow flash sweeping across the page, behind everything */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(115deg,
+    transparent 0 55%,
+    var(--zx-red) 55% 59%,
+    var(--zx-yellow) 59% 63%,
+    var(--zx-green) 63% 67%,
+    var(--zx-cyan) 67% 71%,
+    transparent 71%);
 }
 
 main, .masthead, footer {
@@ -83,19 +111,14 @@ a:hover { text-decoration-thickness: 2px; }
   letter-spacing: 0.01em;
 }
 
-/* a little ZX Spectrum rainbow flash */
 .masthead h1::after {
   content: "";
   display: block;
-  width: 4rem;
-  height: 0.45rem;
-  background: linear-gradient(90deg,
-    #d42d27 0 25%,
-    #f2c230 25% 50%,
-    #37a34a 50% 75%,
-    #28b7d0 75% 100%);
-  transform: skewX(-35deg);
-  margin: 0.7rem auto 0;
+  width: 3.5rem;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--accent);
+  margin: 0.65rem auto 0;
 }
 
 .tagline {
@@ -252,7 +275,7 @@ footer .fine { font-size: 0.9rem; }
 
 @media print {
   body { background: #fff; color: #000; font-size: 11pt; }
-  .section-nav { display: none; }
+  .section-nav, body::before { display: none; }
   .entry { background: none; border: 1px solid #ccc; padding: 0.5rem 0.8rem; }
   a { color: inherit; text-decoration: none; }
   section { break-inside: avoid-page; margin-bottom: 1.5rem; }
