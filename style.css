@@ -142,8 +142,7 @@ h2 {
 
 .entry {
   background: var(--surface);
-  border-left: 3px solid var(--accent);
-  border-radius: 0 10px 10px 0;
+  border-radius: 10px;
   padding: 0.9rem 1.1rem;
   margin: 0.9rem 0;
 }
