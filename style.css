@@ -1,40 +1,7 @@
 /* Leah Lackey, resume page */
 
+/* always dark: soft charcoal on big screens, pure black on phones */
 :root {
-  --bg: #fdfdfb;
-  --surface: #f3f5f3;
-  --text: #24282d;
-  --muted: #5c6670;
-  --accent: #0f766e;
-  --accent-soft: #d8ece9;
-  --rule: #dcdcd4;
-  --badge-bg: #e8efe6;
-  --badge-text: #2e5c38;
-  --zx-red: rgba(212, 45, 39, 0.20);
-  --zx-yellow: rgba(242, 194, 48, 0.20);
-  --zx-green: rgba(55, 163, 74, 0.20);
-  --zx-cyan: rgba(40, 183, 208, 0.20);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #1b1d21;
-    --surface: #24272c;
-    --text: #e6e4de;
-    --muted: #a0a6ad;
-    --accent: #52c4b2;
-    --accent-soft: #223c37;
-    --rule: #3a3d43;
-    --badge-bg: #28372b;
-    --badge-text: #a4cfa9;
-    --zx-red: rgba(212, 45, 39, 0.16);
-    --zx-yellow: rgba(242, 194, 48, 0.16);
-    --zx-green: rgba(55, 163, 74, 0.16);
-    --zx-cyan: rgba(40, 183, 208, 0.16);
-  }
-}
-
-:root[data-theme="dark"] {
   --bg: #1b1d21;
   --surface: #24272c;
   --text: #e6e4de;
@@ -48,6 +15,7 @@
   --zx-yellow: rgba(242, 194, 48, 0.16);
   --zx-green: rgba(55, 163, 74, 0.16);
   --zx-cyan: rgba(40, 183, 208, 0.16);
+  color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
@@ -262,12 +230,8 @@ footer .fine { font-size: 0.9rem; }
 
 /* --- Small screens --- */
 
-/* on phones, dark mode goes properly black (desktop keeps the softer charcoal) */
-@media (max-width: 540px) and (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) { --bg: #000; }
-}
 @media (max-width: 540px) {
-  :root[data-theme="dark"] { --bg: #000; }
+  :root { --bg: #000; }
 }
 
 @media (max-width: 540px) {
