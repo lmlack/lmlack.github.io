@@ -11,10 +11,10 @@
   --rule: #3a3d43;
   --badge-bg: #28372b;
   --badge-text: #a4cfa9;
-  --zx-red: rgba(212, 45, 39, 0.16);
-  --zx-yellow: rgba(242, 194, 48, 0.16);
-  --zx-green: rgba(55, 163, 74, 0.16);
-  --zx-cyan: rgba(40, 183, 208, 0.16);
+  --zx-red: rgba(224, 60, 49, 0.24);
+  --zx-yellow: rgba(242, 194, 48, 0.21);
+  --zx-green: rgba(66, 180, 86, 0.23);
+  --zx-cyan: rgba(45, 196, 221, 0.23);
   color-scheme: dark;
 }
 
