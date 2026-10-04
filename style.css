@@ -231,7 +231,14 @@ footer .fine { font-size: 0.9rem; }
 /* --- Small screens --- */
 
 @media (max-width: 540px) {
-  :root { --bg: #000; }
+  :root {
+    --bg: #000;
+    /* the flash needs more punch against pure black */
+    --zx-red: rgba(224, 60, 49, 0.34);
+    --zx-yellow: rgba(242, 194, 48, 0.30);
+    --zx-green: rgba(66, 180, 86, 0.32);
+    --zx-cyan: rgba(45, 196, 221, 0.32);
+  }
 }
 
 @media (max-width: 540px) {
