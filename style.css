@@ -262,6 +262,14 @@ footer .fine { font-size: 0.9rem; }
 
 /* --- Small screens --- */
 
+/* on phones, dark mode goes properly black (desktop keeps the softer charcoal) */
+@media (max-width: 540px) and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #000; }
+}
+@media (max-width: 540px) {
+  :root[data-theme="dark"] { --bg: #000; }
+}
+
 @media (max-width: 540px) {
   .masthead { padding-top: 2rem; }
   .masthead h1 { font-size: 1.8rem; }
