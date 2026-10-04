@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leah Lackey</title>
+  <meta name="description" content="Leah Lackey — electrical &amp; computer engineer and PhD student at Cornell University working on sensing and state estimation for tiny robots.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <h1>Leah Lackey</h1>
+  <p class="tagline">Electrical &amp; Computer Engineer · PhD Student, Cornell University</p>
+  <nav class="top-links">
+    <a href="mailto:lml276@cornell.edu">lml276@cornell.edu</a>
+    <a href="https://github.com/lmlack">GitHub</a>
+    <a href="https://orcid.org/0000-0002-1365-7189">ORCID</a>
+    <a href="https://ieeexplore.ieee.org/author/37088881292">IEEE&nbsp;Xplore</a>
+    <a href="https://www.researchgate.net/scientific-contributions/Leah-Lackey-2195831502">ResearchGate</a>
+  </nav>
+  <nav class="section-nav" aria-label="Sections">
+    <a href="#research">Research</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#community">Community</a>
+    <a href="#publications">Publications</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="about">
+  <p class="lede">
+    I'm an electrical &amp; computer engineer and a PhD student at Cornell University
+    in the Napp Lab, where I work on sensing and state estimation for tiny robots.
+    I'm also an engineer at two startups,
+    <a href="https://www.empathera.org">Empathera</a> and
+    <a href="https://clovercommons.io">Clover Common Robotics</a>.
+  </p>
+</section>
+
+<section id="research">
+  <h2>Research</h2>
+  <p>
+    At Cornell, I work on robotics — especially sensing and state estimation for small
+    robots that don't have much room for sensors or computing power. Before coming to
+    Ithaca, I did research at Yale's Lens Media Lab and Western Washington University's
+    ASPECT Lab.
+  </p>
+
+  <article class="entry">
+    <h3>Pose estimation for insect-scale robots <span class="badge current">current</span></h3>
+    <p class="tags">state estimation · micro-aerial vehicles · embedded</p>
+    <p>
+      Insect-sized flying robots can't carry much. I'm building a small receiver and
+      estimator that tracks a robot's position and orientation to under a millimeter,
+      combining IMU data with laser sweeps from off-the-shelf VR base stations — and it
+      runs in real time on a microcontroller.
+    </p>
+  </article>
+
+  <article class="entry">
+    <h3>Haptic perception for robot manipulation</h3>
+    <p class="tags">robot learning · haptics · datasets</p>
+    <p>
+      I contributed to <a href="https://emprise.cs.cornell.edu/clamp/">CLAMP</a> with
+      Cornell's <a href="https://emprise.cs.cornell.edu/">EmPRISE Lab</a>: a large
+      crowdsourced haptic dataset, collected with an open-source device, for teaching
+      robots what objects are made of.
+    </p>
+  </article>
+
+  <article class="entry">
+    <h3>Computational analysis of art materials</h3>
+    <p class="tags">computer vision · machine learning · cultural heritage</p>
+    <p>
+      At Yale's Lens Media Lab and WWU, I used imaging and neural networks to study the
+      surfaces of photographic and printmaking papers: measuring surface roughness from
+      raking-light images, and comparing paper textures (including in Matisse
+      lithographs) with triplet networks.
+    </p>
+  </article>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <ul class="timeline">
+    <li>
+      <span class="when">2023 – now</span>
+      <div><b>PhD Student</b>, Electrical &amp; Computer Engineering, Cornell University</div>
+    </li>
+    <li>
+      <span class="when">now</span>
+      <div><b>Electrical Engineer</b>, <a href="https://www.empathera.org">Empathera</a> —
+      a pressure ulcer prevention system: sensor-integrated patches and smart algorithms
+      that monitor patients and step in with pressure relief</div>
+    </li>
+    <li>
+      <span class="when">now</span>
+      <div><b>Hardware Engineer</b>, <a href="https://clovercommons.io">Clover Common Robotics</a> —
+      an affordable weed management robot for small-to-midsize farms, designed to help
+      farm workers rather than replace them</div>
+    </li>
+    <li>
+      <span class="when">2021 – 2023</span>
+      <div><b>Postgraduate Associate</b>, Yale IPCH Lens Media Lab — built a mobile image
+      classifier in JavaScript and TensorFlow, and researched watermark and laid-line
+      detection for authenticating photographic art</div>
+    </li>
+    <li>
+      <span class="when">2019 – 2021</span>
+      <div><b>Undergraduate Researcher</b>, ASPECT Lab, Western Washington University —
+      machine learning for authenticating Henri Matisse artworks</div>
+    </li>
+    <li>
+      <span class="when">2018 – 2020</span>
+      <div><b>CAD Intern</b>, Braaksma Engineering — electrical layouts for neighborhoods
+      across Washington State</div>
+    </li>
+    <li>
+      <span class="when">2016 – 2017</span>
+      <div><b>Data Science / Engineering Intern</b>, NASA Johnson Space Center — a
+      sensor-based "Smart Room" device and a people counter</div>
+    </li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <h3 class="project-group">Hardware</h3>
+
+  <article class="entry">
+    <h3><a href="https://github.com/lmlack/tt-ll6bitshiftregistertoggleenabledfeedback">Tiny Tapeout: 6-bit shift register</a> <span class="badge current">in fabrication</span></h3>
+    <p class="tags">ASIC · Tiny Tapeout · Wokwi</p>
+    <p>
+      My project from my first <a href="https://tinytapeout.com">Tiny Tapeout</a>
+      workshop: a 6-bit shift register with toggle-enabled feedback, currently being
+      manufactured on a real chip. It fits in a single 1×1 tile and has clock, reset,
+      and two data inputs driving six outputs.
+      [<a href="https://wokwi.com/projects/469758119198926849">Wokwi design</a>]
+    </p>
+  </article>
+
+  <article class="entry">
+    <h3>6502 computer <span class="badge current">in progress</span></h3>
+    <p class="tags">6502 · breadboard · digital design</p>
+    <p>
+      A computer built from scratch on breadboards around the classic MOS 6502 CPU,
+      following <a href="https://eater.net/6502">Ben Eater's 6502 computer project</a>.
+    </p>
+  </article>
+
+  <article class="entry">
+    <h3>Tape-measure Yagi antenna</h3>
+    <p class="tags">RF · Yagi · SDR · DIY</p>
+    <p>
+      A homemade directional Yagi antenna built from PVC pipe and tape-measure elements,
+      paired with an <a href="https://www.rtl-sdr.com/">RTL-SDR</a> USB dongle for
+      software-defined radio.
+    </p>
+  </article>
+
+  <h3 class="project-group">Software</h3>
+
+  <article class="entry">
+    <h3><a href="https://www.startipsum.org">StartIpsum</a> <span class="badge">live</span></h3>
+    <p>Helps students find startup funding competitions, accelerators, incubators, and hackathons.</p>
+  </article>
+
+  <article class="entry">
+    <h3><a href="https://www.strippedrecipes.com">StrippedRecipes</a> <span class="badge">live</span></h3>
+    <p>Paste a recipe link and get just the ingredients and steps, without the life story.</p>
+  </article>
+
+  <article class="entry">
+    <h3>Machine learning–based texture classification tool</h3>
+    <p class="tags">web app · machine learning</p>
+    <p>
+      A web tool from my time at Yale's IPCH Lens Media Lab for characterizing the
+      texture of photographic papers. It used a semi-supervised triplet-loss neural
+      network (<a href="#publications">originally developed</a> in the ASPECT Lab at
+      WWU) to place a paper's texture somewhere between smooth and rough, and to match
+      researchers' uploaded samples against the lab's reference collection. Built for
+      conservators, researchers, and historians of photography. Formerly at
+      phototexture.net.
+    </p>
+  </article>
+
+  <h3 class="project-group">Earlier projects</h3>
+  <ul class="plain-list">
+    <li><b>Star tracker</b> (senior project) — a self-led robotic star-tracking device, with my own PCB (EAGLE), CAD, and embedded C</li>
+    <li><b>Underwater ROV</b> (WWU Marine Technology Club) — helped design a vehicle for the MATE International ROV Competition</li>
+    <li><b>NASA Community College Aerospace Scholars</b> — lead programmer on the winning robot team at Johnson Space Center</li>
+    <li><b>Rocket payload</b> — designed telemetry payload casings with SolidWorks, 3D printing, and laser cutting, and founded North Seattle College's Rocketry Club</li>
+  </ul>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul class="timeline">
+    <li>
+      <span class="when">in progress</span>
+      <div><b>PhD, Electrical &amp; Computer Engineering</b>, Cornell University</div>
+    </li>
+    <li>
+      <span class="when">2021</span>
+      <div><b>BS, Electrical &amp; Computer Engineering</b>, minor in Mathematics, Western Washington University</div>
+    </li>
+    <li>
+      <span class="when">2017</span>
+      <div><b>AS, Science Transfer</b>, North Seattle College</div>
+    </li>
+  </ul>
+</section>
+
+<section id="community">
+  <h2>Fellowships &amp; Community</h2>
+  <ul class="plain-list">
+    <li>NSF CSGrad4US Fellow</li>
+    <li>Panelist, UR2PhD Undergraduate Mentoring Workshop &amp; Research Showcase, New Orleans, 2026</li>
+    <li>Social Chair, Cornell Computing Systems Lab, 2024 – 2025</li>
+    <li>Mentor, Becoming Engaged Engineering Scholars (BEES), 2019 – 2021</li>
+    <li>Volunteer, Bellingham Makerspace</li>
+    <li>Volunteer, Girls in Engineering, Math &amp; Science (GEMS) Fair</li>
+  </ul>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+  <ol class="papers">
+    <li>
+      J. DiSciacca, D. Crockett, <b>L. Lackey</b>, and P. Messier.
+      "Surface roughness from raking light images."
+      <span class="venue">Surface Topography: Metrology and Properties</span>, 2026.
+      [<a href="https://doi.org/10.1088/2051-672X/ae5317">doi</a>]
+    </li>
+    <li>
+      P. N. Thakkar, S. Sinha, K. Baijal, Y. Bian (Anjelica), <b>L. Lackey</b>, B. Dodson,
+      H. Kong, J. Kwon, A. Li, Y. Hu, A. Rekoutis, T. Silver, and T. Bhattacharjee.
+      "CLAMP: Crowdsourcing a LArge-scale in-the-wild haptic dataset with an open-source
+      device for Multimodal robot Perception."
+      <span class="venue">Conference on Robot Learning (CoRL)</span>, 2025.
+      [<a href="https://emprise.cs.cornell.edu/clamp/">project</a>]
+      [<a href="https://arxiv.org/abs/2505.21495">arXiv</a>]
+    </li>
+    <li>
+      K. M. Aguilar, S. Powers, <b>L. Lackey</b>, A. Grootveld, and A. G. Klein.
+      "Assessing Paper Texture Similarity in Matisse Lithographs Using a Triplet Neural Network."
+      <span class="venue">IEEE MIT Undergraduate Research Technology Conference (URTC)</span>, 2021.
+      [<a href="https://doi.org/10.1109/URTC54388.2021.9740159">doi</a>]
+    </li>
+    <li>
+      A. Grootveld, V. I. Bugayev, <b>L. Lackey</b>, A. G. Klein, K. Vedula, and D. R. Brown.
+      "Tracking of Dynamical Processes with Model Switching Using Temporal Convolutional Networks."
+      <span class="venue">IEEE Aerospace Conference</span>, 2021.
+      [<a href="https://doi.org/10.1109/AERO50100.2021.9438450">doi</a>]
+    </li>
+    <li>
+      <b>L. Lackey</b>, A. Grootveld, and A. G. Klein.
+      "Semi-supervised Convolutional Triplet Neural Networks for Assessing Paper Texture Similarity."
+      <span class="venue">Asilomar Conference on Signals, Systems, and Computers</span>, 2020.
+      [<a href="https://doi.org/10.1109/IEEECONF51394.2020.9443454">doi</a>]
+    </li>
+    <li>
+      A. Grootveld, <b>L. Lackey</b>, S.-P. Yang, C. Clark, A. G. Klein, and K. Vedula.
+      "Combined classifiers for unmanned vehicle anomaly detection."
+      <span class="venue">IEEE Signal Processing Cup</span>, 2020.
+      [<a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=VUDP0uEAAAAJ&amp;citation_for_view=VUDP0uEAAAAJ:u-x6o8ySG0sC">Google Scholar</a>]
+    </li>
+  </ol>
+</section>
+
+</main>
+
+<footer>
+  <p>
+    Looking for the fun version? Visit
+    <a href="https://www.hamsterdome.com">www.hamsterdome.com</a> 🐹
+  </p>
+  <p class="fine">© 2026 Leah Lackey</p>
+</footer>
+
+</body>
+</html>
