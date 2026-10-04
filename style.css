@@ -1,12 +1,12 @@
-/* Leah Lackey — resume page */
+/* Leah Lackey, resume page */
 
 :root {
   --bg: #fdfdfb;
-  --surface: #f4f4ef;
+  --surface: #f3f5f3;
   --text: #24282d;
   --muted: #5c6670;
-  --accent: #9b2d4e;
-  --accent-soft: #f3dde4;
+  --accent: #0f766e;
+  --accent-soft: #d8ece9;
   --rule: #dcdcd4;
   --badge-bg: #e8efe6;
   --badge-text: #2e5c38;
@@ -18,8 +18,8 @@
     --surface: #24272c;
     --text: #e6e4de;
     --muted: #a0a6ad;
-    --accent: #e4718f;
-    --accent-soft: #3c2a31;
+    --accent: #52c4b2;
+    --accent-soft: #223c37;
     --rule: #3a3d43;
     --badge-bg: #28372b;
     --badge-text: #a4cfa9;
@@ -31,8 +31,8 @@
   --surface: #24272c;
   --text: #e6e4de;
   --muted: #a0a6ad;
-  --accent: #e4718f;
-  --accent-soft: #3c2a31;
+  --accent: #52c4b2;
+  --accent-soft: #223c37;
   --rule: #3a3d43;
   --badge-bg: #28372b;
   --badge-text: #a4cfa9;
@@ -65,20 +65,31 @@ a:hover { text-decoration-thickness: 2px; }
 /* --- Header --- */
 
 .masthead {
-  padding-top: 3rem;
+  padding-top: 3.5rem;
   padding-bottom: 1.5rem;
   border-bottom: 2px solid var(--rule);
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .masthead h1 {
   margin: 0;
-  font-size: 2.2rem;
-  letter-spacing: -0.01em;
+  font-size: 2.5rem;
+  letter-spacing: 0.01em;
+}
+
+.masthead h1::after {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--accent);
+  margin: 0.65rem auto 0;
 }
 
 .tagline {
-  margin: 0.3rem 0 1rem;
+  margin: 0.6rem 0 1.1rem;
   color: var(--muted);
   font-size: 1.1rem;
 }
@@ -86,14 +97,18 @@ a:hover { text-decoration-thickness: 2px; }
 .top-links, .section-nav {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.4rem 1.1rem;
   font-size: 0.95rem;
 }
 
 .section-nav {
-  margin-top: 0.6rem;
-  padding-top: 0.6rem;
+  margin-top: 0.7rem;
+  padding-top: 0.7rem;
   border-top: 1px solid var(--rule);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.82rem;
 }
 
 .section-nav a {
@@ -127,7 +142,8 @@ h2 {
 
 .entry {
   background: var(--surface);
-  border-radius: 10px;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 10px 10px 0;
   padding: 0.9rem 1.1rem;
   margin: 0.9rem 0;
 }
