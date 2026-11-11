@@ -129,6 +129,7 @@ h2 {
 }
 
 .lede { font-size: 1.15rem; margin: 0; }
+.aside { color: var(--muted); font-size: 0.95rem; margin: 0.75rem 0 0; }
 
 .project-group {
   font-size: 1.0625rem;
